@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+
+// Function Invocation:
+
+// Regular Function: In a regular function (not an arrow function), the value of this is determined by how the function is called. It can refer to the global object (e.g., window in browsers) or be undefined in strict mode.
+
+// Method: When a function is called as a method of an object, this refers to the object itself.
+
+        "use strict";
+
+        console.log("Global this : ",this);
+        console.log("Global this.document : ",this.document);
+        console.log("Global document : ",document);
+
+        // regular function
+        function sum(){
+            console.log("\ninside function : 10 + 20 = 30");
+            console.log("inside function this: ",this);
+            // in strict mode (this) -> refers to (undefined) for regular function
+        }
+        sum();
+
+        const person = {
+            name:'jiten',
+            qualifi:"B.Tech",
+
+            //   method -> as inside object
+            sum:function(){
+                console.log("\ninside object function : 10 + 0 = 10");
+                console.log("inside object function this: ",this);
+            }
+        }
+
+    person.sum();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+
+        // Scope Chain:
+        // The scope chain refers to the hierarchy of variable scopes that are accessible to a particular piece of code. When a variable is referenced, JavaScript searches for the variable within the current scope and then traverses up the scope chain until it finds the variable or reaches the global scope.
+
+        // Each function has access to its own variables as well as variables from its parent functions' scopes. This creates a chain of nested scopes, and the JavaScript engine looks through this chain to resolve variable references.
+
+
+        // Lexical Scoping:
+        // Lexical scoping, also known as static scoping, refers to the concept that the scope of a variable is determined by its position within the source code. In other words, a variable's scope is defined by the structure of the code and where the variable is physically located in the code.
+
+        // In JavaScript, lexical scoping means that the inner functions have access to variables declared in their containing (outer) functions, but not the other way around. This allows you to create closures, which are functions that "remember" the variables from their containing scope even after that scope has finished executing.
+        
+
+        function first(){
+            console.log(a+b);
+            var b = "two ";
+            console.log(a+b);
+
+            second();
+
+            function second(){
+                console.log(a+b+c);
+                var c = "three ";
+                console.log(a+b+c);
+            }
+        }
+
+        // function third(){
+        //     var d = "four ";
+        //     // error b,c is undefined
+        //     console.log(a+b+c+d);
+        // }
+
+        
+        console.log(a);
+        var a = "one ";
+        console.log(a);
+        
+        first();
+        // third();
+        // second();
+
+    </script>
+    
+</body>
+</html>
