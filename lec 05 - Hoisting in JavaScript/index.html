@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+        // Hoisting:
+        // Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the creation phase. This allows you to use variables and call functions before they are formally declared in the code. However, only the declarations are hoisted, not the assignments.
+
+        sum(10,20);
+
+        console.log("sum2 : ",sum2);
+        // hoisting doesn't work
+        var sum2 = function (a,b){
+            add = a+b;
+            console.log(a,b,"sum = ",add);
+        }
+        console.log("sum2 : ",sum2);
+        
+        // hoisting doesn't work
+        // (function sum(a,b){
+        //     add = a+b;
+        //     console.log(a,b,"sum = ",add);
+        // })
+
+        function sum(a,b){
+            add = a+b;
+            console.log(a,b,"sum = ",add);
+        }
+
+        sum(456,789);
+
+    </script>
+
+</body>
+</html>

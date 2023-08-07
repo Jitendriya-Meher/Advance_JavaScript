@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // Execution Context:
+        // An execution context represents the environment in which JavaScript code is executed. It includes all the necessary information for a piece of code to run, such as variables, functions, scope, and the value of the this keyword. Every time a function is invoked, a new execution context is created, which is pushed onto the execution stack. Each execution context is associated with a specific scope and provides a way for JavaScript to manage the state of function calls and variable values.
+
+
+        // Key components of an execution context include:
+
+        // Variable Environment: Holds variables declared using var, function declarations, and function arguments. It provides a reference to the variables and functions accessible within the current context.
+
+        // Lexical Environment: Similar to the variable environment, but it also holds the scope chain, which allows functions to access variables from their containing scopes (lexical scope).
+
+        // This Value: Determines the value of the this keyword within the current context. The value of this can vary depending on how a function is called.
+
+        // When a function is invoked, a new execution context is created, and it becomes the active context on top of the execution stack. Once the function completes its execution, its context is removed from the stack, and the control returns to the previous context.
+
+
+        // Execution Stack (Call Stack):
+        // The execution stack, often referred to as the "call stack," is a data structure that keeps track of the active execution contexts during the runtime of a JavaScript program. It follows the Last-In-First-Out (LIFO) principle, meaning the most recently invoked function is at the top of the stack, and the first function that started executing is at the bottom.
+        // When a function is called, its execution context is created and pushed onto the stack. As functions complete their execution, their contexts are popped off the stack. This process continues as the program executes, with contexts being added and removed from the stack as function calls occur.
+
+        // The execution stack is essential for maintaining the order of function calls, tracking their local variables, and managing the control flow of the program.
+
+        console.log(window);
+
+        var name = "jitendriya";
+        console.log("window name :",window.name);
+
+    </script>
+    
+</body>
+</html>

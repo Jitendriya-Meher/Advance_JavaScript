@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    
+</head>
+<body>
+
+
+    <script>
+
+// Variable hoisting is a concept in JavaScript where variable declarations are moved to the top of their containing scope during the creation phase, giving the appearance that variables are "hoisted" or lifted to the top of the code before execution. However, only the declarations are hoisted, not the actual assignments.
+
+// During the creation phase, variable declarations using the var keyword are hoisted to the top of their containing function or global scope. This means that you can reference a variable before it's declared, but it will have an initial value of undefined.
+
+// Variables declared with let and const are also hoisted, but they are placed in a "temporal dead zone" (TDZ) until the point of declaration. This means you cannot access or use these variables before they are declared in the code.
+
+        var a;
+        console.log("a = ",a);
+        a=123;
+        console.log("a = ",a);
+
+        console.log("b = ",b);
+        var b=10;
+        console.log("b = ",b);
+
+        let c;
+        console.log("c = ",c);
+        c=123;
+        console.log("c = ",c);
+
+        // console.log("d = ",d);
+        // Throws an error (ReferenceError)
+        let d=10;
+        console.log("d = ",d);
+
+
+        // error
+        // const e;
+        // console.log("e = ",e);
+        // e=123;
+        // console.log("e = ",e);
+
+        // console.log("f = ",f);
+        // Throws an error (ReferenceError)
+        const f=10;
+        console.log("f = ",f);
+
+
+        var x=10;
+        var x=200;
+        console.log("\nx = ",x);
+
+    </script>
+    
+</body>
+</html>

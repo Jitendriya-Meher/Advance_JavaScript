@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Call Stack:
+        // The call stack is a data structure used by JavaScript to manage the execution of function calls. It keeps track of the order in which functions are called and their corresponding execution contexts. When a function is called, a new execution context is created and pushed onto the call stack. As functions complete their execution, their execution contexts are popped off the stack.
+
+        // The call stack follows the Last-In-First-Out (LIFO) principle, which means that the most recently called function is at the top of the stack, and the first function that started executing is at the bottom.
+
+        // The call stack is responsible for maintaining the order of function calls and ensuring that each function's execution is completed before moving on to the next function. It prevents functions from interfering with each other's local variables and execution flow.
+
+        console.log("hii");
+
+        function a() {
+            debugger;
+            console.log("a start");
+            b();
+            console.log("a end");
+        }
+
+        function b() {
+            debugger;
+            console.log("b start");
+            c();
+            console.log("b end");
+        }
+
+        function c() {
+            debugger;
+            console.log("c start");
+            console.log("c end");
+        }
+
+        a();
+
+    </script>
+
+</body>
+</html>
