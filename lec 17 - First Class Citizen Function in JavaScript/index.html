@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    <script>
+
+// In JavaScript, functions are considered first-class citizens. This means that functions are treated like any other value, such as a number, string, or object. As a result, you can use functions in the same way you would use other types of values.
+
+        // function as a variable
+        const tq = function(){
+            console.log("thank you very much!");
+        }
+        tq();
+
+
+        // method as a variable
+        const yt = {
+            name:"jiten",
+            age:21,
+            qualif : function(){
+                console.log("qualification : B.Tech");
+            }
+        }
+        yt.qualif();
+
+        
+        // function as a argument 
+        const myName = () => {
+            return "hello world";
+        }
+        const greet = (sayHi,name) => {
+            console.log(sayHi(),name);
+        }
+        greet(myName," amit");
+
+        
+        // returning function
+        function a(){
+            return function b(){
+                return("inside function a then function b");
+            }
+            return "inside function a";
+        }
+
+        console.log(a());
+        console.log(a()());
+
+        const c = a();
+        console.log(c);
+        console.log(c());
+
+    </script>
+
+    
+</body>
+</html>
