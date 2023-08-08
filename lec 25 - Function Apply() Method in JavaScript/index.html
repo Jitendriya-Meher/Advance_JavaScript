@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+// In JavaScript, the call() method is a built-in function that allows you to call a function and explicitly specify the value of this and any arguments that the function should receive. The primary purpose of call() is to execute a function in a specific context, which can be useful in scenarios like function borrowing and function currying.
+
+        const yt ={
+            name:"jiten",
+            age:21,
+            feature: function(id){
+                console.log(`hiii ${this.name} , i am ${this.age} years old and id = ${id}`);
+            }
+        }
+
+        const yt2 ={
+            name:"amit",
+            age:20
+        }
+
+        yt.feature("12er34t");
+
+        console.log('\Apply method');
+        // syntax
+        // functionName.apply(thisValue, argsArray);
+        // argsArray: An array-like or iterable object containing the arguments to be passed to the function.
+        yt.feature.apply(yt,["678yui"]);
+        yt.feature.apply(yt2,["123abc"]);
+
+        let maxi = Math.max(1,2,3,4);
+        console.log(maxi);
+
+        let arrMax = Math.max.apply(null,[1,2,3,4,5,6,7 ,8,9,10]);
+        console.log(arrMax);
+    
+
+    </script>
+
+</body>
+</html>
