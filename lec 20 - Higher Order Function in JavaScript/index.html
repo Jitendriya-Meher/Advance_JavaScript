@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+// A higher-order function is a function that either takes one or more functions as arguments or returns a function as its result. In other words, it operates on other functions, treating them as data or manipulating them to create new functions. Higher-order functions are a powerful concept in JavaScript and play a significant role in functional programming. They promote modularity, reusability, and allow you to express complex operations in a concise and elegant manner.
+
+        const intQus = (name) => {
+            if( name == "jiten"){
+                return function(topic){
+                    console.log(`hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+            else if( name == "amit"){
+                return function(topic){
+                    console.log(`hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+            else if( name == "jitendriya"){
+                return function(topic){
+                    console.log(`hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+            else{
+                return function(topic){
+                    console.log(`hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+        }
+
+        intQus("jiten")("AIML");
+        intQus("amit")("web development");
+        intQus("jitendriya")("UI/UX");
+        intQus("pruthiraj")("android development");
+
+        const candi1 = intQus("jitendriya");
+        candi1("graphic design");
+
+    </script>
+
+</body>
+</html>
