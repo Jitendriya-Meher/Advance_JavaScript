@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+
+// A closure is a fundamental concept in JavaScript that occurs when a nested function "remembers" its lexical scope even after the outer function has finished executing. In simpler terms, a closure allows a function to access variables from its containing (enclosing) function, even after that function has completed execution. Closures play a crucial role in many aspects of JavaScript programming, including encapsulation, data privacy, and creating higher-order functions.
+
+        const outerFun = (a) => {
+            let b = 20;
+            const innerFun = () => {
+                let sum = a+b;
+                console.log(`${a} + ${b} = ${sum}`);
+            }
+            // innerFun();
+            return innerFun;
+        }
+
+        // outerFun(67);
+
+        let inner = outerFun(123);
+        console.dir(inner);
+        inner();
+        
+    </script>
+    
+</body>
+</html>
