@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+        let like = 100;
+
+        const youtube = {
+            name:"thapa",
+            subs:"9800"
+        }
+
+        console.log("start")
+        console.log(like);
+        console.log(youtube);
+
+        const fun = (a,...b) => {
+            a=200;
+            b.subs="1000000";
+            console.log(like);
+            console.log(youtube);
+            console.log(a);
+            console.log(b);
+        }
+
+        // const fun = (a,b) => {
+        //     a=200;
+        //     b.subs="1000000";
+        //     console.log("inside fun");
+        //     console.log(like);
+        //     console.log(youtube);
+        //     console.log(a);
+        //     console.log(b);
+        // }
+
+        fun(like,youtube);
+
+        console.log("end");
+        console.log(like);
+        console.log(youtube);
+
+
+
+    </script>
+
+</body>
+</html>
