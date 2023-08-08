@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+
+        const intQus = (name) => {
+            if( name == "jiten"){
+                return function(topic){
+                    console.log(`1. hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+            else if( name == "amit"){
+                return function(topic){
+                    console.log(`2. hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+            else if( name == "jitendriya"){
+                return function(topic){
+                    console.log(`3. hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+            else{
+                return function(topic){
+                    console.log(`4. hii ${name} , whats is ${topic}? explain us .`);
+                }
+            }
+        }
+
+        const candi1 = intQus("jiten");
+        candi1("html");
+
+        const candi2 = intQus("amit");
+        candi2("css");
+
+        intQus("jitendriya")("javascript");
+
+        intQus("Jitendriya Meher")("react JS");
+
+    </script>
+    
+</body>
+</html>
