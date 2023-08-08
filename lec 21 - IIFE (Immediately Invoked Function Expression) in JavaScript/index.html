@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    <script>
+
+// An IIFE, which stands for "Immediately Invoked Function Expression," is a JavaScript function that is defined and executed immediately after its creation. It's a common pattern used to create a private scope for variables and functions and to avoid polluting the global scope with unnecessary identifiers. IIFE is often used in situations where you want to isolate code and prevent variable conflicts, particularly when dealing with libraries, plugins, and modules.
+
+        (
+            function(){
+                var name = "jiten";
+                console.log("name = ",name);
+            }
+        )();
+
+        console.log("outer name = ",name," , ",typeof(name));
+
+    </script>
+    
+</body>
+</html>
