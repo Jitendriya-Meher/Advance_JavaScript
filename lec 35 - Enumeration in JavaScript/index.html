@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+                
+        // Enumeration in JavaScript refers to the process of iterating through items in a collection, such as an array, object, or other iterable data structure, in order to access or manipulate the values they contain. JavaScript provides several methods for enumerating elements, depending on the type of data structure you're working with.
+
+        // The for...in loop is used to iterate over the enumerable properties of an object, including properties inherited from its prototype chain. It's commonly used to loop through the keys of an object.
+
+        // for (const key in object) {
+        //     // Code to operate on object[key]
+        // }
+        // object: The object you want to iterate over.
+        // key: The current property name in each iteration.
+
+        const bioData = {
+            name:"jiten",
+            age:21,
+            deg:"B.Tech",
+            id:123
+        }
+
+        for( key in bioData) {
+            console.log(key, "=",bioData[key]);
+            // console.log(key, bioData.key);
+        }
+
+    </script>
+    
+</body>
+</html>
