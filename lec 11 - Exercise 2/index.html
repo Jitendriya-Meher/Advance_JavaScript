@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+        const thapa = {
+            name:"thapa",
+            sum : function(){
+                console.log("this.name = ",this.name);
+                var add = 10+20;
+                console.log("sum = ",add);
+                console.log(this);
+
+                function child(){
+                    console.log("child method name = ",name);
+                    var name="jiten";
+                    console.log("child method name = ",name);
+                    console.log("child this =",this);
+                }
+                child();
+            }
+        }
+
+        thapa.sum();
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+        // Number , String , Boolean , Undefined, Null, Symbol 
+        
+        // else object
+ 
+
+
+        // JavaScript is a dynamically typed language, which means that you don't explicitly declare the data type of a variable. Instead, the data type is determined at runtime based on the value assigned to the variable. JavaScript has several built-in data types, which can be categorized as follows:
+
+        // Primitive Data Types:
+
+        // Undefined: Represents an uninitialized variable or a function with no return value.
+        // Null: Represents the intentional absence of any value.
+        // Boolean: Represents a true or false value.
+        // Number: Represents numeric values, including integers and floating-point numbers.
+        // String: Represents sequences of characters enclosed in single or double quotes.
+        // Symbol (ES6): Represents a unique and immutable value, often used as object property keys.
+
+
+
+        // Non-Primitive Data Types (Reference Types):
+
+        // Object: Represents a collection of key-value pairs, or properties, where each property can hold any data type, including other objects.
+        // Array: A special type of object used to store ordered lists of values.
+        // Function: A callable object that can contain executable code.
+        // Date: Represents a specific point in time.
+        // RegExp: Represents regular expressions for pattern matching.
+        // Map (ES6): A collection of key-value pairs with unique keys.
+        // Set (ES6): A collection of unique values.
+
+        let a =1;
+        let b ="jiten";
+        let c =true;
+        let d;
+        let e ="";
+        let f = null;
+
+        console.log("typeof a = ",typeof(a));
+        console.log("typeof b = ",typeof(b));
+        console.log("typeof c = ",typeof(c));
+        console.log("typeof d = ",typeof(d));
+        console.log("typeof e = ",typeof(e));
+        console.log("typeof f = ",typeof(f));
+
+        const obj ={
+            name:"test",
+            sub:"test",
+        }
+
+        obj.objects = "objects";
+        console.log(obj.objects, typeof(obj.objects));  
+
+        console.log(typeof({}));
+        console.log(typeof([]))
+        console.log(typeof( function(){}));
+
+        const check = () => {
+            console.log("inside check");
+        }
+
+        check.add = 20;
+
+        console.log(typeof(check), check);
+        console.log(check.add);
+
+    </script>
+
+</body>
+</html>
